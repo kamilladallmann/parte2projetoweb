@@ -1,0 +1,33 @@
+{
+  "name": "parte2projetoweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilladallmann/parte2projetoweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilladallmann/parte2projetoweb/issues"
+  },
+  "homepage": "https://github.com/kamilladallmann/parte2projetoweb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "git": "^0.1.5",
+    "http": "0.0.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.3.8",
+    "multer": "^1.4.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}

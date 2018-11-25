@@ -29,6 +29,7 @@ const photoRoutes = require('./routes/photos')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('/', indexRoutes);
 app.use('/users', usersRoutes);

@@ -3,73 +3,70 @@
 
 <head>
     <title>PhotoImages</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-8">
-                <form class="form-inline" action="/index">
-                    <label for="email" >Email address:</label>
-                    <input type="email" class="form-control " id="email" autocomplete="off" required>
-                    <label for="pwd" class="mr-sm-2">Password:</label>
-                    <input type="password" class="form-control" id="pwd" autocomplete="off" required>
-                    <button type="submit" class="btn btn-primary mb-2">Login</button>
-                </form>
-            </div>
-
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-
-    <hr>
-        <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 center">
-                <h2> Criar uma nova conta </h2>
-                <form method="post" enctype="application/json" action="/index">
-                    <div class="form-group ">
-                        <label for="usr">Name:</label>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="usr" autocomplete="off">
-                        </div>
-                    </div>
+            <div class="col-sm-6">
+                <form class="form-inline" action="/view/index.js" method="post">
                     <div class="form-group">
-                        <label for="eml">Email:</label>
-                        <div class="col-sm-8">
-                            <input type="email" class="form-control" id="eml" autocomplete="off">
-                        </div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="Insira seu email" name="email"
+                            autocomplete="off" required />
                     </div>
                     <div class="form-group">
                         <label for="pwd">Password:</label>
-                        <div class="col-sm-8">
-                            <input type="password" class="form-control" id="pwd" autocomplete="off">
-                        </div>
+                        <input type="password" class="form-control" id="login-pwd" placeholder="Insira sua senha" name="pwd"
+                            autocomplete="off" required />
                     </div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 150px">Cadastro</button>
-
+                    <button type="submit" class="btn btn-default ">Login</button>
                 </form>
             </div>
         </div>
+    </nav>
+    <hr>
+    <div class="container-fluid">
+
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <h3>Crie uma conta</h3>
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Insira seu nome" autocomplete="off"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="cd-email" placeholder="Insira seu email" autocomplete="off"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="cd-pwd" placeholder="Insira uma senha" autocomplete="off"
+                        required />
+                </div>
+                <button type="submit" class="btn btn-default">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+
 </body>
+
+<script src="/javascripts/index.js"></script>
 
 </html>
